@@ -12,7 +12,7 @@
 <body>
   <h1> Create Lead </h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DGA000008I4n8" 
-    method="POST" onsubmit="beforeSubmit()">
+    method="POST" onsubmit="beforeSubmit(event)">
     
     <input type=hidden name="oid" value="00DGA000008I4n8">
     <input type=hidden name="retURL" value="https://prachigithubaccount.github.io/Web-To-Lead-Bootcamp/thanks.html">
@@ -30,7 +30,7 @@
     
    
     <label for="date">Date</label><input  type="date" class = "inputDate"/><br>
-    <div class="g-recaptcha" data-sitekey="6Leh5IopAAAAACVQOyHyuCbDsRQ-XQJ2UGKyrUFa"></div><br>
+    <div class="g-recaptcha" data-sitekey="6Leh5IopAAAAACVQOyHyuCbDsRQ-XQJ2UGKyrUFa" data-callback = "captchaSucess"></div><br>
     <input type="submit" name="submit" class = "submit" required = "true">
     
     </form>
